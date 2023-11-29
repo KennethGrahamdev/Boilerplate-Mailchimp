@@ -34,17 +34,26 @@
         * {
             box-sizing: border-box;
         }
-
-        table {
-            border-spacing: 0;
-        }
-
-        td {
-            padding: 0;
-        }
-
+        table,
+	    td {
+		    border-collapse: collapse;
+		    mso-table-lspace: 0pt;
+		    mso-table-rspace: 0pt;
+		    mso-line-height-rule: exactly;
+		    -webkit-text-size-adjust: 100%;
+		    -ms-text-size-adjust: 100%;
+	    }
         img {
             border: 0;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+        p, h1, h2, h3, h4, h5, ul, ol {
+            margin: 0;
         }
         /* Removes blue and underline defaults in IOS */
         a[x-apple-data-detectors] {
@@ -143,32 +152,38 @@
                         <!-- Footer start -->
                         <tr>
                             <td>
-                                <table class="section-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
-                                    <tr>
-                                        <td class="foot" style="text-align:center;background-color: #ffffff;padding: 40px 30px;">
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                <tr>
+                                  <td>
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                                      <tr>
+                                        <td>
                                             <table class="content-container" role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
                                                 <tr>
-                                                    <td mc:edit="footer">
-                                                        <p style="text-align:center;font-size: 12px;line-height: 1.2;color: #5d5d5d;font-weight: 400;font-family: 'Roboto', sans-serif;padding-bottom: 20px;">*|LIST:DESCRIPTION|* <br />
+                                                    <td mc:edit="footer" class="social-foot" style="text-align:center;background-color: #DDB456;padding: 20px 40px;">
+                                                        <p class="footer-text" style="text-align:center;font-size: 14px;line-height: 1.2;color: #333333;font-weight: 400;font-family: 'Roboto', sans-serif;">*|LIST:DESCRIPTION|* <br />
                                                             <br />
-                                                            <a href="*|UNSUB|*">Unsubscribe</a> *|EMAIL|* from this list.<br />
+                                                            <a style="font-size: 14px;line-height: 1.2;color: #333333;font-weight: bold;" href="*|UNSUB|*">Unsubscribe</a> *|EMAIL|* from this list.<br />
                                                             <br />
                                                             Our mailing address is:<br />
                                                             *|HTML:LIST_ADDRESS_HTML|*<br />
                                                             <br />
                                                             Copyright (C) *|CURRENT_YEAR|* *|LIST:COMPANY|* All rights reserved.<br />
                                                             <br />
-                                                            <a href="*|FORWARD|*">Forward</a> this email to a friend<br />
+                                                            <a style="font-size: 14px;line-height: 1.2;color: #333333;font-weight: bold;" href="*|FORWARD|*">Forward</a> this email to a friend<br />
                                                             <br />
-                                                            <a href="*|UPDATE_PROFILE|*">Update your preferences</a>
+                                                            <a style="font-size: 14px;line-height: 1.2;color: #333333;font-weight: bold;" href="*|UPDATE_PROFILE|*">Update your preferences</a>
                                                             <br />
                                                         </p>
                                                     </td>
                                                 </tr>
                                             </table>
                                         </td>
-                                    </tr>
-                                </table>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
                         </tr>
                         <!-- Footer end -->
@@ -190,4 +205,5 @@
     <![endif]-->
 </body>
 </html>
+
 
